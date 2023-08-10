@@ -1,0 +1,398 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperClone</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body class="body">
+
+    <!-- 1 -->
+    <div class="home">
+        <div class="intro-header" style="overflow-x: hidden;">
+            <div class="container-fluid p-0" style="position: relative;">
+                <!-- screen size greater than 900px -->
+                <nav class="navbar navbar-bg bg-dark navbar-dark nav-grid-1 visible-900 vw-100 p-3" style="position: absolute;">
+                    <a href="#" class="navbar-brand">
+                        <img src="images/download.png" width="200" alt="Superchain Logo">
+                    </a>
+                    <div class="">
+                        <ul class="navbar-nav" style="flex-direction: row; gap: 10vw;">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Meet The Team
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    BACKERS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    BLOG
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-dark me-2" style="background-color: #1a1b1f;">
+                        GET ACCESS
+                    </button>
+                </nav>
+
+                <!-- screen size lesser than 900 px -->
+                <nav class="navbar p-0 navbar-dark not-visible-900 vw-100" style="position: absolute;">
+                    <div class="bg-dark vw-100">
+                        <a href="#" class="navbar-brand">
+                            <img src="images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB.png" width="200" alt="Superchain Logo">
+                        </a>
+                        <button onclick ="toggleNav()">
+                            Press Me
+                        </button>
+                        <br>
+                    </div>
+                    <div class="vw-100 p-0 m-0 hidden-nav" id="myBox">
+                        <ul class="navbar-nav" style="flex-direction: col;">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Meet The Team
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    BACKERS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    BLOG
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- HOME -->
+            <div class="intro-header">
+				<div class="container justify-content-center text-center intro-header-container animate-head mt-4" style="padding-top: 30vh; width: 50%; color: #e9d2c4; font-size: 4rem;">
+					<div class="fs-1">
+                        The Open Index Protocol
+                    </div>
+					<div class="fs-5 text-white">
+                        By collecting and customising data in minutes, Superchain serves as the layer on top of which builders create applications, faster
+                    </div>
+                    <button class="btn btn-dark mt-3">
+                        <a href="#" class="text-decoration-none text-white">
+                            GET ACCESS
+                        </a>
+                    </button>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="section-main pb-3">
+        <div class="section-container animate">
+            <div class="section-container-left">
+                <div class="section-header">
+                    Web3 data is broken
+                </div>
+                <div class="section-text">
+                    Most indexes today are closed, siloed, or centralised, which leads to an unacceptable developer experience and users suffer. Specifically, we face:
+                </div>
+            </div>
+        </div>
+        <div class="section-container animate">
+            <div class="section-container-right">
+                <div class="section-header header-right">
+                    High Latency
+                </div>
+                <div class="section-text text-right">
+                    Latency for queries today is unacceptable. Some offer data in seconds, whereas others in hundreds of milliseconds. When it takes this long to load a dApp users switch off.
+                </div>
+            </div>
+        </div>
+        <div class="section-container animate">
+            <div class="section-container-left">
+                <div class="section-header">
+                    Aggregated Data
+                </div>
+                <div class="section-text">
+                    Indexes usually aggregate data to improve performance and operational experience. But this is far from ideal for many use cases because users miss valuable data.
+                </div>
+            </div>
+        </div>
+        <div class="section-container animate">
+            <div class="section-container-right">
+                <div class="section-header header-right">
+                    Barriers to Entry
+                </div>
+                <div class="section-text text-right">
+                    Barriers to Entry Presently developers integrate with a fixed API or query interface which they find quickly limiting. They have to waste time building their own indexer. This is a major barrier to entry for the next wave of blockchain innovation.
+                </div>
+            </div>
+        </div>
+        <div class="section-container-right p-5">
+            <button>
+                GET ACCESS
+            </button>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <section class="working">
+		<div class="page-padding p-5">
+            <div class="animate">
+                <section class="grid-container">
+                    <div> <!-- Left Box -->
+                        <h2 class="grid-text">How Superchain works</h2>
+                    </div>
+                    <div>   <!-- Right Box -->
+                        <!-- 1 -->
+                        <div class="desgin-container grid-container-design">
+                            <div class="design-1">
+                                <div class="design-2">
+                                    <div class="design-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="design-header">
+                                    Shift in mindset
+                                </h3>
+                                <div class="desgin-text">
+                                    Superchain's solution offers a shift in mindset from "Web2" centralised architectures to "Web3" decentralised architecture. Data indexes from Superchain are pushed out to users benefitting from low latency performance by processing locally.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="desgin-container grid-container-design">
+                            <div class="design-1">
+                                <div class="design-2">
+                                    <div class="design-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="design-header">
+                                    Consistent and granular model
+                                </h3>
+                                <div class="desgin-text">
+                                    Superchain unifies data into a consistent and granular model, rather than simply aggregating it due to the limitations of centralised architecture. This allows data to be fast, customisable and decentralised
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="desgin-container grid-container-design">
+                            <div class="design-1">
+                                <div class="design-2">
+                                    <div class="design-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="design-header">
+                                    Storage and Streaming
+                                </h3>
+                                <div class="desgin-text">
+                                    Superchain has its own customised data storage platform and streaming capabilities. Developers interact with the indices via an SDK for on-the-wire speeds that avoid the use of slow presentation layers.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="desgin-container grid-container-design">
+                            <div class="design-1">
+                                <div class="design-2">
+                                    <div class="design-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="design-header">
+                                    Designed around users
+                                </h3>
+                                <div class="desgin-text">
+                                    Superchain’s aim is to realise a fully decentralized data protocol designed around users, rather than computer limitations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+        <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63f4eced2818950809dd389f_Superchain_2D%20Diagram-11-p-1600.jpg" class="working-img animate">
+	</section>
+
+    <!-- 4 -->
+    <div class="testimonial p-3">
+        <div class="testimonial_component animate">
+            <a href="https://medium.com/@nickgardner0651/indexing-on-chain-data-the-superchain-thesis-51f26beb0bb6" class="text-decoration-none pb-3">
+                <h3 class="testimonial-text">
+                    The protocol is purpose-built and enables four key features:
+                </h3>
+            </a>
+            <a href="https://medium.com/@nickgardner0651/indexing-on-chain-data-the-superchain-thesis-51f26beb0bb6" class="text-decoration-none pb-3">
+                <blockquote class="block-quote">
+                    1. The ability for users to become network operators
+                    <br>
+                    2. Access to historical and real-time low-latency data
+                    <br>
+                    3. Advanced analytics to improve utilization
+                    <br>
+                    4. Customizable toolboxes for application-specific use
+                </blockquote>
+            </a>
+            <a href="https://medium.com/@nickgardner0651/indexing-on-chain-data-the-superchain-thesis-51f26beb0bb6" class="text-decoration-none pb-3">
+                <h3 class="testimonial-text">
+                    "Instead of packaging all of these into a Web2 API
+                    <br>
+                    service, Superchain has built a Web3 business model for Web3
+                    <br>
+                    data. It is a crypto-native solution for on-chain analytics."
+                </h3>
+            </a>
+            <div class="">
+                <img src="images/63eac818b7108d7520caec56_photo_2023-02-13%2017.26.14.jpeg" alt="testimonial logo" class="client-img">
+            </div>
+            <div class="client-name pb-3">Nick Gardner</div>
+            <div class="client-sub-text pb-3">Whisper</div>
+        </div>
+        <div>
+            <div class="testimonial_component animate">
+                <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d983ac94dc8083dab689ad_logo1.svg" class="testimonial-img pb-3">
+                <h3 class="testimonial-comment pb-3">
+                    "Superchain’s technology and focus on toolboxes positions it as the premier Open Index Protocol. Both James and Max have a steadfast vision of how an open, fast, and decentralized index protocol will win - which we are deeply aligned with."
+                </h3>
+                <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63e167a2f9cb086d54dc7bbf_7GacbFx0_400x400.jpeg" class="client-img">
+                <div class="client-name pb-3">Kinjal Shah</div>
+                <div class="client-sub-text pb-3">General Partner at Blockchain Capital.</div>
+            </div>
+            <div class="testimonial_component animate pb-3">
+                <a href="https://www.johnlilic.info/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6…e%20pantalla%202023-05-30%20a%20las%209.50.01.png" class="testimonial-img pb-3">
+                </a>
+                <h3 class="testimonial-comment pb-3">
+                    "Superchain is the most based chain of them all"
+                </h3>
+                <a href="https://www.johnlilic.info/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6…65/63e167a2f9cb086d54dc7bbf_7GacbFx0_400x400.jpeg" class="client-img">
+                </a>
+                <a href="https://www.johnlilic.info/">
+                    <div class="client-name pb-3">John Lilic</div>
+                </a>
+                <div class="client-sub-text pb-3">Product development advisor and seed investor</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section-network">
+        <div class="network-container">
+            <h3 class="network-header animate">
+                Networks supported
+            </h3>
+            <div class="network-text animate">
+                Superchain currently supports common Ethereum (EVM) based chains and L2s
+            </div>
+            <a data-w-id="96e52d52-b7c6-9943-9df8-c3fa248d882d" href="https://ethereum.org/es/" target="_blank" class="w-inline-block">
+                <img src="images/63e40da7f371abbbbfe6dc73_eth-diamond-purple.png" loading="lazy" height="100" width="100" srcset="images/63e40da7f371abbbbfe6dc73_eth-diamond-purple-p-500.png 500w, images/63e40da7f371abbbbfe6dc73_eth-diamond-purple-p-800.png 800w, images/63e40da7f371abbbbfe6dc73_eth-diamond-purple-p-1080.png 1080w, images/63e40da7f371abbbbfe6dc73_eth-diamond-purple.png 1920w" sizes="50px" alt="Ethereum Logo" class="network-img animate">
+            </a>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="section-head">
+        <div class="section-client animate">
+            <h2 class="section-client-text pt-10">Backed by Web3 leaders</h2>
+            <div class="section-logo-list">
+                <a href="https://blockchain.capital/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d983ac94dc8083dab689ad_logo1.svg" class="section-logo-img"/>
+                </a>
+                <a href="https://www.maven11.com/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d9844682ac73723b2cb5e8_logo4-p-500.png" class="section-logo-img"/>
+                </a>
+                <a href="https://kr1.io/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d9841296e34ab7353baf52_logo2-p-500.png" class="section-logo-img"/>
+                </a>
+                <a href="http://tokonomy.co/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d98422cf21f4534a5c0680_logo3-p-500.png" class="section-logo-img"/>
+                </a>
+                <a href="https://www.johnlilic.info/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/6476195f0f193cab6e7f3a60_JohnLilic-p-500.jpg" class="section-logo-img"/>
+                </a>
+                <a href="https://keyrock.eu/">
+                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/64021002969f220976e92c40_keyrock_logo_blue.png" class="section-logo-img"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="footer">
+        <div class="footer-grid">
+            <div class="p-1">
+                <a>
+                    <img src="images/download.png" style="max-width: 200px;"/>
+                </a>
+                <div class="p-3">
+                    <a href="https://twitter.com/OpenSuperchain" class="p-2"><img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d2d143f9fc3777781bf40a_twitter.svg" width="20"></a>
+                    <a href="https://github.com/SuperChainNetwork" class="p-2"><img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63d2d143f9fc372ab41bf403_github.svg" width="20"></a>
+                    <a href="https://www.linkedin.com/company/superchain-network/about/" class="p-2"><img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63ea6b87477bc33f1c73ef7a_linkedin-logo.png" width="20"></a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-header">ABOUT</div>
+                <div>
+                    <div class="footer-text"><a class="footer-link">Meet the team</a></div>
+                    <div class="footer-text"><a class="footer-link">Backers</a></div>
+                    <div class="footer-text"><a class="footer-link">Terms</a></div>
+                </div>
+            </div>
+            <div>
+                <div class="footer-header">BUILD</div>
+                <div>
+                    <div class="footer-text"><a class="footer-link">Pricing Data</a></div>
+                    <div class="footer-text"><a class="footer-link">Superchain Token</a></div>
+                </div>
+            </div>
+            <div>
+                <div class="footer-header">COMMUNITY</div>
+                <div>
+                    <div class="footer-text"><a class="footer-link">Blog<img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63ea68baa1d5645e977ce428_share%20(1).png" height="12px" width="12px" ></a></div>
+                    <div class="footer-text"><a class="footer-link">Twitter</a></div>
+                    <div class="footer-text"><a class="footer-link">Linkedin</a></div>
+                    <div class="footer-text"><a class="footer-link">Github</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+        var box = document.getElementById("myBox");
+        box.classList.toggle("hidden-nav");
+        }
+    </script>
+    <script>
+        let animate = document.querySelectorAll('.animate');
+
+        window.onscroll = () => {
+            animate.forEach(ani => {
+                let top = window.scrollY;
+                let offset = ani.offsetTop - 400;
+                let height = ani.offsetHeight;
+
+                if(top >= offset && top < offset + height) {
+                    ani.classList.add('show-animate');
+                }
+            })
+        }
+    </script>
+
+</body>
+</html>
