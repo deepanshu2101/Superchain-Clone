@@ -7,84 +7,110 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body class="body">
+<body class="body vw-100">
 
     <!-- 1 -->
     <div class="home">
         <div class="intro-header" style="overflow-x: hidden;">
             <div class="container-fluid p-0" style="position: relative;">
-                <!-- screen size greater than 900px -->
-                <nav class="navbar navbar-bg bg-dark navbar-dark nav-grid-1 visible-900 vw-100 p-3" style="position: absolute;">
-                    <a href="#" class="navbar-brand">
-                        <img src="images/download.png" width="200" alt="Superchain Logo">
-                    </a>
+                <!-- NAVBAR -->
+                <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation homepage">
                     <div class="">
-                        <ul class="navbar-nav" style="flex-direction: row; gap: 10vw;">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Meet The Team
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    BACKERS
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    BLOG
-                                </a>
-                            </li>
-                        </ul>
+                        <style>
+                            .burgerIconMobile {
+                                fill: #ff2c3c;
+                            }
+                        </style>
                     </div>
-                    <button class="btn btn-dark me-2" style="background-color: #1a1b1f;">
-                        GET ACCESS
-                    </button>
-                </nav>
-
-                <!-- screen size lesser than 900 px -->
-                <nav class="navbar p-0 navbar-dark not-visible-900 vw-100" style="position: absolute;">
-                    <div class="bg-dark vw-100">
-                        <a href="#" class="navbar-brand">
-                            <img src="images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB.png" width="200" alt="Superchain Logo">
+                    <div class="nav-wrap">
+                        <a href="/" aria-current="page" class="logo-link w-nav-brand w--current logo-header ">
+                            <img src="images/download.png" width="200" alt="Superchain Logo">
                         </a>
-                        <button onclick ="toggleNav()">
-                            Press Me
-                        </button>
-                        <br>
-                    </div>
-                    <div class="vw-100 p-0 m-0 hidden-nav" id="myBox">
-                        <ul class="navbar-nav" style="flex-direction: col;">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
+                        <div class="menu">
+                            <nav role="navigation" class="nav-items float-end nav-mobile" id="myBox">
+                                <a href="/team" class="navigation-item dropdown-togglee desktop-nav w-button">
                                     Meet The Team
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                
+                                <a href="/backers" class="navigation-item dropdown-togglee desktop-nav w-button">
                                     BACKERS
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="https://blog.superchain.network/" target="_blank" class="navigation-item dropdown-togglee desktop-nav w-button">
                                     BLOG
                                 </a>
-                            </li>
-                        </ul>
+                            </nav>
+                            <div class="btn-access">
+                                <button onclick="toggleNav()" style="visibility: hidden;">
+                                    <img src="images/63e6ca1a8cfec25b2252a5d4_icons8-menu-squared-100.png" width="36" height="36" alt class="burgerIconMobile">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/get-access" class="button access-btn">
+                            <div class="">
+                                GET ACCESS
+                            </div>
+                        </a>
                     </div>
-                </nav>
-            </div>
+                </div>
+                <!-- -------------------- -->
+                <!-- <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation homepage">
+                    <div class="">
+                        <style>
+                            .burgerIconMobile {
+                                fill: #ff2c3c;
+                            }
+                        </style>
+                    </div>
+                    <div class="nav-wrap">
+                        <a href="/" aria-current="page" class="logo-link w-nav-brand w--current logo-header ">
+                            <img src="images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB.png" width="200" sizes="(max-width: 479px) 100vw, 180px" srcset="images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB-p-500.png 500w, images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB-p-800.png 800w, images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB-p-1080.png 1080w, images/63d1bfacfad8e0050f7b0a04_SC_Lockup_Red_RGB.png 1500w" alt="Superchain Logo" class="">
+                        </a>
+                        <div class="menu">
+                            <nav role="navigation" class="nav-items float-end">
+                                <a href="/team" class="navigation-item dropdown-toggle desktop-nav w-button">
+                                    Meet The Team
+                                </a>
+                                <a href="/backers" class="navigation-item dropdown-toggle desktop-nav w-button">
+                                    BACKERS
+                                </a>
+                                <a href="https://blog.superchain.network/" target="_blank" class="navigation-item dropdown-toggle desktop-nav w-button">
+                                    BLOG
+                                </a>
+                            </nav>
+                        </div>
+                        <button onclick="toggleNav()" class="btn-access">
+                            <img src="images/63e6ca1a8cfec25b2252a5d4_icons8-menu-squared-100.png" width="36" height="36" altclass="burgerIconMobile">
+                        </button>
+                        <a href="/get-access" class="button access-btn">
+                            <div class="">
+                                GET ACCESS
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-items float-end nav-mobile" id="myBox">
+                        <a href="/team" class="navigation-item dropdown-toggle desktop-nav w-button">
+                            Meet The Team
+                        </a>
+                        <a href="/backers" class="navigation-item dropdown-toggle desktop-nav w-button">
+                            BACKERS
+                        </a>
+                        <a href="https://blog.superchain.network/" target="_blank" class="navigation-item dropdown-toggle desktop-nav w-button">
+                            BLOG
+                        </a>
+                    </div>
+                </div> -->
+            </div>               
 
             <!-- HOME -->
-            <div class="intro-header">
-				<div class="container justify-content-center text-center intro-header-container animate-head mt-4" style="padding-top: 30vh; width: 50%; color: #e9d2c4; font-size: 4rem;">
-					<div class="fs-1">
+            <div class="intro-header pb-3">
+				<div class="container justify-content-center text-center intro-header-container animate-head mt-4" style="padding-top: 30vh; width: 80%; color: #e9d2c4; font-size: 4rem; @media (max-width: 991px) {width: auto;}">
+					<div class="header-font">
                         The Open Index Protocol
                     </div>
-					<div class="fs-5 text-white">
+					<div class="header-text text-white">
                         By collecting and customising data in minutes, Superchain serves as the layer on top of which builders create applications, faster
                     </div>
-                    <button class="btn btn-dark mt-3">
+                    <button class="button mt-2">
                         <a href="#" class="text-decoration-none text-white">
                             GET ACCESS
                         </a>
@@ -145,13 +171,14 @@
 
     <!-- 3 -->
     <section class="working">
-		<div class="page-padding p-5">
+		<div class="working-page p-5">
             <div class="animate">
                 <section class="grid-container">
-                    <div> <!-- Left Box -->
+                    <div class="box"> <!-- Left Box -->
+                        <div class="working-underline">___</div>
                         <h2 class="grid-text">How Superchain works</h2>
                     </div>
-                    <div>   <!-- Right Box -->
+                    <div class="box">   <!-- Right Box -->
                         <!-- 1 -->
                         <div class="desgin-container grid-container-design">
                             <div class="design-1">
@@ -159,6 +186,20 @@
                                     <div class="design-3">
                                     </div>
                                 </div>
+                                <!-- <div class="line">
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                    |<br>
+                                </div> -->
                             </div>
                             <div>
                                 <h3 class="design-header">
@@ -274,16 +315,16 @@
             </div>
             <div class="testimonial_component animate pb-3">
                 <a href="https://www.johnlilic.info/">
-                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6…e%20pantalla%202023-05-30%20a%20las%209.50.01.png" class="testimonial-img pb-3">
+                    <img src="images/64761b31227363a29cbed5a8_Captura de pantalla 2023-05-30 a las 9.50.01.png" class="testimonial-img pb-3">
                 </a>
                 <h3 class="testimonial-comment pb-3">
                     "Superchain is the most based chain of them all"
                 </h3>
                 <a href="https://www.johnlilic.info/">
-                    <img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6…65/63e167a2f9cb086d54dc7bbf_7GacbFx0_400x400.jpeg" class="client-img">
+                    <img src="images/6476195f0f193cab6e7f3a60_JohnLilic.jpg" class="client-img">
                 </a>
                 <a href="https://www.johnlilic.info/">
-                    <div class="client-name pb-3">John Lilic</div>
+                    <div class="client-name pb-3 text-decoration-none">John Lilic</div>
                 </a>
                 <div class="client-sub-text pb-3">Product development advisor and seed investor</div>
             </div>
@@ -333,10 +374,10 @@
     </div>
 
     <!-- 7 -->
-    <div class="footer">
+    <div class="footer w-100">
         <div class="footer-grid">
             <div class="p-1">
-                <a>
+                <a class="footer-logo-img">
                     <img src="images/download.png" style="max-width: 200px;"/>
                 </a>
                 <div class="p-3">
@@ -345,38 +386,86 @@
                     <a href="https://www.linkedin.com/company/superchain-network/about/" class="p-2"><img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63ea6b87477bc33f1c73ef7a_linkedin-logo.png" width="20"></a>
                 </div>
             </div>
-            <div>
-                <div class="footer-header">ABOUT</div>
+            <div class="footer-header-grid">
                 <div>
-                    <div class="footer-text"><a class="footer-link">Meet the team</a></div>
-                    <div class="footer-text"><a class="footer-link">Backers</a></div>
-                    <div class="footer-text"><a class="footer-link">Terms</a></div>
+                    <div class="footer-header">ABOUT</div>
+                    <div>
+                        <div class="footer-text"><a class="footer-link">Meet the team</a></div>
+                        <div class="footer-text"><a class="footer-link">Backers</a></div>
+                        <div class="footer-text"><a class="footer-link">Terms</a></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="footer-header">BUILD</div>
                 <div>
-                    <div class="footer-text"><a class="footer-link">Pricing Data</a></div>
-                    <div class="footer-text"><a class="footer-link">Superchain Token</a></div>
+                    <div class="footer-header">BUILD</div>
+                    <div>
+                        <div class="footer-text"><a class="footer-link">Pricing Data</a></div>
+                        <div class="footer-text"><a class="footer-link">Superchain Token</a></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="footer-header">COMMUNITY</div>
                 <div>
-                    <div class="footer-text"><a class="footer-link">Blog<img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63ea68baa1d5645e977ce428_share%20(1).png" height="12px" width="12px" ></a></div>
-                    <div class="footer-text"><a class="footer-link">Twitter</a></div>
-                    <div class="footer-text"><a class="footer-link">Linkedin</a></div>
-                    <div class="footer-text"><a class="footer-link">Github</a></div>
+                    <div class="footer-header">COMMUNITY</div>
+                    <div>
+                        <div class="footer-text"><a class="footer-link">Blog<img src="https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63ea68baa1d5645e977ce428_share%20(1).png" height="12px" width="12px" ></a></div>
+                        <div class="footer-text"><a class="footer-link">Twitter</a></div>
+                        <div class="footer-text"><a class="footer-link">Linkedin</a></div>
+                        <div class="footer-text"><a class="footer-link">Github</a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // function toggleNav() {
+        // var box = document.getElementById("myBox");
+        // box.classList.toggle("d-none");
+        // }
+
+
         function toggleNav() {
-        var box = document.getElementById("myBox");
-        box.classList.toggle("hidden-nav");
+            var box = document.getElementById("myBox");
+            if(window.innerWidth <= 991) {
+                box.classList.toggle("d-none");
+            }
+            else {
+                box.classList.remove("d-none");
+            }
         }
+
+    </script>
+
+    <script>
+        // Function to change the class based on screen width
+        function changeClassBasedOnScreenWidth() {
+            const smallScreenDiv = document.querySelector('#myBox');
+
+            if (window.innerWidth > 991) {
+                smallScreenDiv.classList.remove('d-none');
+            }
+            else {
+                smallScreenDiv.classList.add('d-none');
+            }
+        }
+
+        // Initial call to set the class based on screen width
+        changeClassBasedOnScreenWidth();
+
+        // Add an event listener for window resize
+        window.addEventListener('resize', changeClassBasedOnScreenWidth);
+
+        // function toggleNav() {
+        //     var box = document.getElementById("myBox"); // Select the navigation element
+
+        //     if (window.innerWidth <= 991) {
+        //         // if (!box.classList.contains("d-none")) {
+        //         //     box.classList.add("d-none"); // Add the "my-box" class for small screens
+        //         // }
+        //         box.classList.toggle("d-none");
+        //     } else {
+        //         // Handle larger screens here (if needed)
+        //         box.classList.remove("d-none");
+        //     }
+        // }
     </script>
     <script>
         let animate = document.querySelectorAll('.animate');
